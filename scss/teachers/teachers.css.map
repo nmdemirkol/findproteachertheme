@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,SAAS,CAAC;EACN,gBAAgB,ECDE,OAAO;EDEzB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,yBAAyB,ECDZ,IAAI;EDEjB,0BAA0B,ECFb,IAAI;CDGpB",
+    "sources": [
+        "teachers.scss",
+        "_submenu.scss",
+        "../_variables.scss"
+    ],
+    "names": [],
+    "file": "teachers.css"
+}

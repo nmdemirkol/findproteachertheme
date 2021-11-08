@@ -1,0 +1,58 @@
+@import "../_variables";
+* {
+    box-sizing: border-box;
+}
+.searchboxdiv {
+    position: relative;
+
+    z-index: 5;
+
+    .searchbox {
+        position: absolute;
+        bottom: -30px;
+
+        input[type="text"] {
+            padding: 15px 30px;
+            font-size: 17px;
+            border: 2px solid $primary-color;
+            float: left;
+            width: 80%;
+            background: white;
+            border-top-left-radius: $primary-radius;
+            border-bottom-left-radius: $primary-radius;
+        }
+        input[type="text"]:focus {
+            border: 2px solid $primary-black-color;
+            outline: 0;
+        }
+
+        button {
+            float: left;
+            width: 20%;
+            padding: 15px;
+            background: $primary-color;
+            color: white;
+            font-size: 17px;
+            border: 2px solid $primary-color;
+            border-left: none; /* Prevent double borders */
+            cursor: pointer;
+
+            transition: 0.2s;
+            border-top-right-radius: $primary-radius;
+            border-bottom-right-radius: $primary-radius;
+        }
+
+        button:hover {
+            background-color: $primary-active-color;
+            transition: 0.2s;
+            border-color: $primary-active-color;
+        }
+    }
+
+    /* Clear floats */
+    .searchbox::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

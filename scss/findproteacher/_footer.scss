@@ -1,0 +1,68 @@
+@import "../_variables";
+footer {
+    background-color: $primary-black-color;
+    padding: 50px 0;
+    color: white;
+
+    .footer-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        img {
+            width: 90%;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .footer-social {
+            i {
+                padding: 10px;
+                font-size: 22px;
+            }
+        }
+    }
+    .footer-links {
+        h1 {
+            margin: 0;
+            padding: 0px 0 30px 0;
+            font-size: 24px;
+        }
+        .link {
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .link:hover {
+            color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+        }
+    }
+    .footer-contact {
+        h1 {
+            margin: 0;
+            padding: 0px 0 30px 0;
+            font-size: 24px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            i {
+                float: left;
+                padding: 10px;
+                color: $primary-color;
+                font-size: 24px;
+                width: 20%;
+            }
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                width: 80%;
+                float: left;
+                margin: 10px 0 0 0;
+                padding: 0;
+            }
+        }
+    }
+}

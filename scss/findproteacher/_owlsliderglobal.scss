@@ -1,0 +1,21 @@
+@import "../_variables";
+
+.owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    .owl-next,
+    .owl-prev {
+        i {
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            border-radius: $primary-radius;
+
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+}

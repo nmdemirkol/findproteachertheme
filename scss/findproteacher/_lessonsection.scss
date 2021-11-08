@@ -1,0 +1,66 @@
+@import "../_variables";
+.lesson-section {
+    padding: 20px 0;
+}
+.lesson-slider {
+    .item {
+        border-radius: $primary-radius;
+        overflow: hidden;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        .lesson-catagory {
+            background-color: $secondary-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 15px;
+            padding: 5px 15px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            border-radius: $primary-radius;
+        }
+        img.lesson-iamge {
+            height: 150px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 10px 20px;
+            font-size: 18px;
+            color: rgb(99, 99, 99);
+            font-weight: normal;
+        }
+        .lesson-teacher {
+            padding: 20px 20px 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+            p {
+                margin: 10px;
+            }
+        }
+        .footer {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .footer-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .info-item {
+                    padding: 0 5px;
+                }
+            }
+            .price {
+            }
+        }
+    }
+}

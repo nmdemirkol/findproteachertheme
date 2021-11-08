@@ -1,0 +1,9 @@
+@import "../_variables";
+
+.sub-menu {
+    background-color: $primary-black-color;
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: $primary-radius;
+    border-bottom-right-radius: $primary-radius;
+}

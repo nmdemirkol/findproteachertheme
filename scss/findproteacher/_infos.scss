@@ -1,0 +1,28 @@
+.infos {
+    padding: 70px 0 40px 0;
+    .info-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+        padding: 30px 30px;
+        img {
+            width: 80px;
+            margin-right: 20px;
+        }
+        .text {
+            h1 {
+                padding: 0;
+                margin: 0;
+                font-size: 22px;
+                padding-bottom: 5px;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+                line-height: 15px;
+            }
+        }
+    }
+}
