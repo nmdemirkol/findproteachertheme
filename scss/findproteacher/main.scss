@@ -2,7 +2,6 @@
 
 @import "_header";
 @import "_hero";
-@import "_buttons";
 @import "_searchbox";
 @import "_infos";
 @import "_sectionheader";
@@ -13,7 +12,11 @@
 @import "_owlsliderglobal";
 @import "_loginsection";
 @import "_responsive";
-@import "teacherprofile";
+@import "_teacherprofile";
+@import "_lessons";
+@import "_companies";
+@import "_aboutus";
+@import "_contact";
 body {
     font-family: "Prompt", sans-serif;
 }

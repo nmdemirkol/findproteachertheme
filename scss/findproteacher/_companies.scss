@@ -1,0 +1,90 @@
+@import "../_variables";
+.companies {
+    position: relative;
+    // background-color: $secondary-color;
+    .companies-bg {
+        //   background-image: url("../../images/herobg.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .companies-slider {
+        position: relative;
+        padding-bottom: 50px;
+        z-index: 2;
+    }
+    .companies-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: $primary-radius;
+        margin: 50px 10px 10px 10px;
+        padding: 10px 20px;
+        background-color: white;
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        .companies-img {
+            flex: 1;
+            width: 80%;
+            margin: 10px 0;
+        }
+
+        .text {
+            flex: 2;
+
+            padding: 20px 0 0 20px;
+            h1 {
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+            }
+            .adverd-status {
+                background-color: $secondary-color;
+                font-size: 12px;
+                color: white;
+                padding: 3px 7px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border-radius: $primary-radius;
+            }
+            .company-name {
+                font-size: 14px;
+                padding: 0;
+
+                color: rgb(90, 90, 90);
+            }
+            .catagory {
+                font-size: 12px;
+                padding: 0;
+                color: rgb(138, 138, 138);
+                font-weight: bold;
+                text-align: right;
+            }
+            .price {
+                margin-top: 5px;
+                font-size: 14px;
+                padding-top: 5px;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                text-align: right;
+            }
+            .button {
+                width: 50%;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: -25px;
+                text-align: center;
+            }
+        }
+    }
+}

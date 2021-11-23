@@ -1,0 +1,184 @@
+.login .login-left {
+  background-color: #4e1d2d;
+  height: 100vh;
+  position: relative;
+}
+
+.login .login-left .left-bg {
+  background-image: url("../../images/herobg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.login .login-left .left-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 0 70px;
+}
+
+.login .login-left .left-in .logo {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 20px;
+}
+
+.login .login-left .left-in .logo img {
+  height: 40px;
+}
+
+.login .login-left .left-in h1 {
+  position: relative;
+  z-index: 5;
+  color: white;
+  padding: 50px 0 0 0;
+  font-size: 38px;
+}
+
+.login .login-left .left-in p {
+  position: relative;
+  z-index: 5;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px 0 0 0;
+  font-size: 18px;
+}
+
+.login .login-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 120px;
+  position: relative;
+}
+
+.login .login-right h1 {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.login .login-right .register {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 30px;
+}
+
+.login .login-right form {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.login .login-right form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  font-size: 14px;
+}
+
+.login .login-right form .checkbox {
+  padding: 0 0 20px 0;
+}
+
+.login .login-right form input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.login .login-right form input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  left: 0;
+  border: 2px solid #e6254a;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.login .login-right form input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #e6254a;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 8px;
+}
+
+.login .login-right form button {
+  width: 100%;
+  margin: 0;
+}
+
+.login .login-right form .or-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+.login .login-right form .or-bar .bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 1px;
+  background-color: #747474;
+  margin: 10px;
+}
+
+.login .login-right form .or-bar .or {
+  color: #747474;
+}
+/*# sourceMappingURL=login.css.map */

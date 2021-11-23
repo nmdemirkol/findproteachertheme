@@ -1,0 +1,101 @@
+@import "../_variables";
+
+.contact-section {
+    padding-top: 50px;
+    .contact-section-map {
+    }
+    .contact-section-form {
+        padding: 70px;
+        .contact-section-header {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+                min-width: 100%;
+                border-left: $primary-color 4px solid;
+                padding-left: 20px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 14px;
+            resize: none;
+        }
+
+        input[type="text"] {
+            width: 100%;
+
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 14px;
+        }
+
+        button {
+            float: right;
+            margin: 0;
+        }
+    }
+}
+.contact-section-two {
+    .contact-section-two-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: $primary-radius;
+
+        padding: 50px;
+
+        i {
+            text-align: center;
+            font-size: 42px;
+            width: 100px;
+            line-height: 93px;
+            padding-top: 7px;
+
+            border-radius: 100%;
+            color: white;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .bg-pink {
+        background-color: rgb(197, 10, 72);
+    }
+    .bg-light-pink {
+        background-color: rgb(255, 230, 238);
+    }
+    .bg-orange {
+        background-color: rgb(253, 122, 0);
+    }
+    .bg-light-orange {
+        background-color: rgb(253, 239, 226);
+    }
+    .bg-green {
+        background-color: rgb(135, 253, 0);
+    }
+    .bg-light-green {
+        background-color: rgb(241, 253, 228);
+    }
+}

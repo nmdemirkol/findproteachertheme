@@ -3,8 +3,15 @@ $(window).scroll(function () {
     var sticky = $('.header-global'),
         scroll = $(window).scrollTop();
 
-    if (scroll >= 100) sticky.addClass('fixed');
-    else sticky.removeClass('fixed');
+    if (scroll >= 100) {
+        sticky.addClass('fixed');
+        document.getElementById("hero").style.marginTop = "70px";
+    }
+    else {
+        sticky.removeClass('fixed');
+        document.getElementById("hero").style.marginTop = "0px";
+    }
+
 });
 
 function openNav() {

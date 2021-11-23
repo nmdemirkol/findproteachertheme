@@ -29,4 +29,82 @@
             text-align: center;
         }
     }
+
+    .courses-hero-header {
+        position: relative;
+        z-index: 2;
+        padding-top: 60px;
+        padding-bottom: 0;
+        color: $primary-black-color;
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.hero-min {
+    background-color: $primary-light-color;
+    position: relative;
+
+    .hero-teacher {
+        position: relative;
+        z-index: 2;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: $primary-black-color;
+        .hero-info {
+            h1 {
+                font-size: 24px;
+            }
+            p {
+            }
+        }
+        .hero-stars {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .social {
+                margin-left: 20px;
+                i {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+.hero-list {
+    background-color: $primary-light-color;
+    position: relative;
+
+    .hero-list-in {
+        position: relative;
+        z-index: 2;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: $primary-black-color;
+        .hero-info {
+            h1 {
+                font-size: 36px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            p {
+            }
+        }
+        .hero-stars {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .social {
+                margin-left: 20px;
+                i {
+                    padding: 10px;
+                }
+            }
+        }
+    }
 }

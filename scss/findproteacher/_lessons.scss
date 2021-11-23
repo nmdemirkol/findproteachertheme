@@ -1,0 +1,66 @@
+@import "../_variables";
+
+.list-nav-menu {
+    background-color: $primary-light-color;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    .list-nav-menu-in {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: white;
+            margin: 5px;
+            border-radius: $primary-radius;
+            color: rgb(128, 128, 128);
+        }
+    }
+}
+
+.list-in-header {
+    padding: 20px 0;
+    .in-header {
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .in-settings {
+    }
+}
+
+.listing {
+    .left-nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+        padding: 20px;
+        border-radius: $primary-radius;
+        .nav-header {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            color: $primary-color;
+        }
+        a {
+            text-decoration: none;
+            padding: 5px 7px;
+            font-size: 14px;
+            margin: 2px 2px 0 2px;
+
+            color: rgb(88, 88, 88);
+        }
+        a:hover {
+            color: rgb(0, 0, 0);
+        }
+    }
+}
