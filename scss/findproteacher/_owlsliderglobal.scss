@@ -19,3 +19,37 @@
         }
     }
 }
+.list-nav-menu {
+    .owl-nav {
+        padding: 0;
+        margin: 0;
+        .owl-next {
+            position: absolute;
+            right: -70px;
+            top: -10px;
+            i {
+                padding: 15px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                border-radius: $primary-radius;
+
+                background-color: white;
+                color: $primary-color;
+            }
+        }
+        .owl-prev {
+            position: absolute;
+            left: -70px;
+            top: -10px;
+            i {
+                padding: 15px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                border-radius: $primary-radius;
+
+                background-color: white;
+                color: $primary-color;
+            }
+        }
+    }
+}

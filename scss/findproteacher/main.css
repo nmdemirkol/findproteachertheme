@@ -142,7 +142,7 @@ header .mobile-menu {
 .sidepanel {
   width: 0;
   position: fixed;
-  z-index: 50;
+  z-index: 105;
   height: 100vh;
   top: 0;
   left: 0;
@@ -625,6 +625,100 @@ header .mobile-menu {
   color: #1a8a77;
 }
 
+.lessons .item {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.lessons .item .lesson-catagory {
+  background-color: #25e6c6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.lessons .item img.lesson-iamge {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.lessons .item h1 {
+  margin: 10px 20px;
+  font-size: 18px;
+  color: #636363;
+  font-weight: normal;
+}
+
+.lessons .item .lesson-teacher {
+  padding: 20px 20px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.lessons .item .lesson-teacher img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.lessons .item .lesson-teacher p {
+  margin: 10px;
+}
+
+.lessons .item .footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lessons .item .footer .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lessons .item .footer .footer-info .info-item {
+  padding: 0 5px;
+}
+
+.lessons .item .footer .price span {
+  color: #1a8a77;
+}
+
 footer {
   background-color: #2d2d2d;
   padding: 50px 0;
@@ -797,6 +891,41 @@ footer .footer-contact .contact-item p {
   color: #e6254a;
 }
 
+.list-nav-menu .owl-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.list-nav-menu .owl-nav .owl-next {
+  position: absolute;
+  right: -70px;
+  top: -10px;
+}
+
+.list-nav-menu .owl-nav .owl-next i {
+  padding: 15px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: white;
+  color: #e6254a;
+}
+
+.list-nav-menu .owl-nav .owl-prev {
+  position: absolute;
+  left: -70px;
+  top: -10px;
+}
+
+.list-nav-menu .owl-nav .owl-prev i {
+  padding: 15px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: white;
+  color: #e6254a;
+}
+
 .login-section {
   position: relative;
   padding: 0;
@@ -921,31 +1050,15 @@ footer .footer-contact .contact-item p {
 
 .list-nav-menu {
   background-color: #f1f1e8;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 55px;
+  padding-bottom: 25px;
 }
 
-.list-nav-menu .list-nav-menu-in {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.list-nav-menu .list-nav-menu-in a {
+.list-nav-menu .list-nav-menu-in .catagory-item a {
+  display: table;
   text-decoration: none;
   padding: 10px 15px;
   background-color: white;
-  margin: 5px;
   border-radius: 10px;
   color: gray;
 }
@@ -959,45 +1072,164 @@ footer .footer-contact .contact-item p {
   margin: 0;
 }
 
-.listing .left-nav-menu {
+.catagory-header .catagory-header-in {
+  padding-top: 50px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.catagory-header .catagory-header-in img {
+  width: 120px;
+  margin-right: 40px;
+}
+
+.list-setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-setting .dropdown button {
+  position: relative;
+  display: inline-block;
+  border: 0;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  margin: 30px 10px 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-weight: bold;
+  color: #323232;
+}
+
+.list-setting .dropdown button i {
+  padding-left: 7px;
+}
+
+.list-setting .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.list-setting .show {
+  display: block;
+}
+
+.lessons .item {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.lessons .item .lesson-catagory {
+  background-color: #25e6c6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
-.listing .left-nav-menu .nav-header {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-  color: #e6254a;
+.lessons .item img.lesson-iamge {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
-.listing .left-nav-menu a {
-  text-decoration: none;
-  padding: 5px 7px;
-  font-size: 14px;
-  margin: 2px 2px 0 2px;
-  color: #585858;
+.lessons .item h1 {
+  margin: 10px 20px;
+  font-size: 18px;
+  color: #636363;
+  font-weight: normal;
 }
 
-.listing .left-nav-menu a:hover {
-  color: black;
+.lessons .item .lesson-teacher {
+  padding: 20px 20px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.lessons .item .lesson-teacher img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.lessons .item .lesson-teacher p {
+  margin: 10px;
+}
+
+.lessons .item .footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lessons .item .footer .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lessons .item .footer .footer-info .info-item {
+  padding: 0 5px;
+}
+
+.lessons .item .footer .price span {
+  color: #1a8a77;
 }
 
 .companies {
@@ -1345,6 +1577,171 @@ footer .footer-contact .contact-item p {
 
 .contact-section-two .bg-light-green {
   background-color: #f1fde4;
+}
+
+.lesson-details {
+  margin-top: 30px;
+}
+
+.lesson-details .lesson-left {
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-details .lesson-left .lesson-image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.lesson-details .lesson-left .teacher-image img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 10px solid white;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  margin-top: -50px;
+  display: block;
+  z-index: 1;
+}
+
+.lesson-details .lesson-left .teacher-info {
+  padding: 20px;
+}
+
+.lesson-details .lesson-right .tabs {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+}
+
+.lesson-details .lesson-right .tabs .tabs-item {
+  font-size: 14px;
+  padding: 5px 30px;
+  color: #b9b9b9;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+
+.lesson-details .lesson-right .tabs .tab-active {
+  background-color: #e6254a;
+  color: white;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-details .description {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.global-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.global-page .left-bar {
+  min-width: 50px;
+}
+
+.global-page .left-bar .left-bar-in {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background-color: white;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  min-width: 50px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.global-page .left-bar .left-bar-in .bar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.global-page .left-bar .left-bar-in .bar img {
+  height: 40px;
+  width: 40px;
+  display: table;
+  margin: 15px auto;
+  border-radius: 100%;
+}
+
+.global-page .left-bar .left-bar-in .item {
+  position: relative;
+}
+
+.global-page .left-bar .left-bar-in .item i {
+  line-height: 40px;
+  width: 100%;
+  display: table;
+  text-align: center;
+  color: #3b3b3b;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.global-page .left-bar .left-bar-in .item .text {
+  height: auto;
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  line-height: 20px;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0;
+  font-size: 12px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #3b3b3b;
+}
+
+.global-page .left-bar .left-bar-in .item .text div {
+  margin: 10px 0;
+}
+
+.global-page .left-bar .left-bar-in .item:hover .text {
+  display: inline-block;
+  padding: 0 20px;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.global-page .normal-page {
+  width: 100%;
+}
+
+.global-page .normal-page .sidepanel {
+  margin-left: 50px;
 }
 
 body {

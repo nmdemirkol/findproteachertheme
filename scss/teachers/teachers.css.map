@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACEA,AAAA,SAAS,CAAC;EACN,gBAAgB,ECDE,OAAO;EDEzB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,yBAAyB,ECAZ,IAAI;EDCjB,0BAA0B,ECDb,IAAI;CDEpB",
+    "mappings": "ACEA,AAAA,SAAS,CAAC;EACN,gBAAgB,ECDE,OAAO;EDEzB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,yBAAyB,ECGZ,IAAI;EDFjB,0BAA0B,ECEb,IAAI;CDDpB",
     "sources": [
         "teachers.scss",
         "_submenu.scss",

@@ -2,21 +2,20 @@
 
 .list-nav-menu {
     background-color: $primary-light-color;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    .list-nav-menu-in {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    padding-top: 55px;
+    padding-bottom: 25px;
 
-        a {
-            text-decoration: none;
-            padding: 10px 15px;
-            background-color: white;
-            margin: 5px;
-            border-radius: $primary-radius;
-            color: rgb(128, 128, 128);
+    .list-nav-menu-in {
+        .catagory-item {
+            a {
+                display: table;
+                text-decoration: none;
+                padding: 10px 15px;
+                background-color: white;
+
+                border-radius: $primary-radius;
+                color: rgb(128, 128, 128);
+            }
         }
     }
 }
@@ -33,34 +32,125 @@
     }
 }
 
-.listing {
-    .left-nav-menu {
+.catagory-header {
+    .catagory-header-in {
+        padding-top: 50px;
+        padding-bottom: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        img {
+            width: 120px;
+            margin-right: 40px;
+        }
+        div {
+        }
+    }
+}
 
-        padding: 20px;
+.list-setting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .dropdown {
+        button {
+            position: relative;
+            display: inline-block;
+            border: 0;
+            padding: 10px 20px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            margin: 30px 10px 10px 0;
+            border-radius: $primary-radius;
+            cursor: pointer;
+            background-color: white;
+            font-weight: bold;
+            color: rgb(50, 50, 50);
+            i {
+                padding-left: 7px;
+            }
+        }
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .show {
+        display: block;
+    }
+}
+
+.lessons {
+    .item {
         border-radius: $primary-radius;
-        .nav-header {
-            margin: 0;
-            padding: 0;
-            font-size: 20px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
-            color: $primary-color;
-        }
-        a {
-            text-decoration: none;
-            padding: 5px 7px;
+        overflow: hidden;
+        margin: 10px 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        .lesson-catagory {
+            background-color: $secondary-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 15px;
+            padding: 5px 15px;
             font-size: 14px;
-            margin: 2px 2px 0 2px;
-
-            color: rgb(88, 88, 88);
+            color: rgba(0, 0, 0, 0.5);
+            border-radius: $primary-radius;
         }
-        a:hover {
-            color: rgb(0, 0, 0);
+        img.lesson-iamge {
+            height: 150px;
+            object-fit: cover;
+            width: 100%;
+        }
+        h1 {
+            margin: 10px 20px;
+            font-size: 18px;
+            color: rgb(99, 99, 99);
+            font-weight: normal;
+        }
+        .lesson-teacher {
+            padding: 20px 20px 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+            p {
+                margin: 10px;
+            }
+        }
+        .footer {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .footer-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .info-item {
+                    padding: 0 5px;
+                }
+            }
+            .price {
+                span {
+                    color: $secondary-dark-color;
+                }
+            }
         }
     }
 }
