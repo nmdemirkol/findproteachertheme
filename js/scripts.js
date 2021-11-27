@@ -34,18 +34,7 @@ function closeNav() {
     document.getElementById("mySidepanelBG").style.opacity = "0";
 }
 
-function openEditingNav() {
-    document.getElementById("mySidepanel").style.width = "350px";
-    document.getElementById("mySidepanelBG").style.zIndex = "49";
-    document.getElementById("mySidepanelBG").style.opacity = "0.5";
 
-}
-
-function closeEditingNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("mySidepanelBG").style.zIndex = "-10";
-    document.getElementById("mySidepanelBG").style.opacity = "0";
-}
 
 
 $(document).ready(function () {

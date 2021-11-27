@@ -2,10 +2,14 @@
 
 .lesson-details {
     margin-top: 30px;
+    .button {
+        text-align: center;
+    }
     .lesson-left {
         border-radius: $primary-radius;
         overflow: hidden;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
         .lesson-image {
             width: 100%;
             height: 200px;
@@ -26,11 +30,34 @@
             }
         }
         .teacher-info {
+            position: relative;
             padding: 20px;
             h1 {
+                font-size: 24px;
             }
-            p {
+            .name {
+                color: $primary-dark-gray-color;
             }
+            .stars {
+                color: orange;
+                position: absolute;
+                right: 20px;
+                top: -30px;
+            }
+            .price {
+                border-top: 1px solid $primary-gray-color;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                .money {
+                    color: $secondary-dark-color;
+                }
+            }
+        }
+    }
+    .location {
+        i {
         }
     }
     .lesson-right {
@@ -53,10 +80,103 @@
             }
         }
     }
-    .description {
+    .in-global {
         padding: 20px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
         border-radius: $primary-radius;
+        h1 {
+            font-size: 22px;
+        }
+        p {
+            color: $primary-dark-gray-color;
+        }
+    }
+    .description {
+    }
+    .teacher-about {
+    }
+    .video {
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: $primary-radius;
+        }
+    }
+    .list-about {
+        h2 {
+            font-size: 18px;
+        }
+        li {
+            font-size: 14px;
+        }
+    }
+    .lesson-comments {
+        .comments-header {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            .comments-header-left {
+                h1 {
+                    border-left: $primary-color 4px solid;
+                    padding-left: 20px;
+                    font-size: 24px;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .comments-header-right {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                i {
+                    color: orange;
+                }
+                span {
+                    font-weight: bold;
+                    color: orange;
+                    padding: 0 10px 0 5px;
+                }
+            }
+        }
+        .comment-line {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: $primary-radius;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            .comment-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .left {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 100%;
+                    }
+                    span {
+                        padding-left: 10px;
+                        font-weight: bold;
+                    }
+                }
+                .right {
+                    i {
+                        color: orange;
+                    }
+                    span {
+                        font-weight: bold;
+                        color: orange;
+                    }
+                }
+            }
+            .comment-text {
+                padding-top: 15px;
+                color: $primary-dark-gray-color;
+            }
+        }
+        .teacher-comment {
+            background-color: $primary-light-gray-color;
+        }
     }
 }

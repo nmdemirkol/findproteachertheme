@@ -38,10 +38,11 @@
   position: relative;
   z-index: 5;
   margin-bottom: 20px;
+  display: table;
 }
 
 .login .login-left .left-in .logo img {
-  height: 40px;
+  width: 100%;
 }
 
 .login .login-left .left-in h1 {
@@ -61,6 +62,8 @@
 }
 
 .login .login-right {
+  height: 100vh;
+  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,10 +74,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 120px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   position: relative;
 }
 
@@ -99,6 +101,18 @@
 }
 
 .login .login-right form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  font-size: 14px;
+}
+
+.login .login-right form input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin-bottom: 10px;
@@ -180,5 +194,104 @@
 
 .login .login-right form .or-bar .or {
   color: #747474;
+}
+
+.login .login-right form .two-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login-right form .two-input input:first-child {
+  margin-right: 10px;
+}
+
+.user-type-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: #f1f1e8;
+}
+
+.user-type-select .bg {
+  background-image: url("../../images/herobg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.user-type-select .logo {
+  position: relative;
+  z-index: 5;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.user-type-select .item {
+  position: relative;
+  z-index: 5;
+  margin: 10px;
+  padding: 40px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.user-type-select .item img {
+  width: 60%;
+  margin: auto;
+  display: table;
+  margin-bottom: 10px;
+}
+
+.user-type-select .item h1 {
+  font-size: 22px;
+}
+
+.user-type-select .item p {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.user-type-select .item .info-lines {
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+.user-type-select .item .info-lines i {
+  color: #25e6c6;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+.user-type-select .item .button {
+  margin-top: 10px;
+}
+
+.user-type-select .item .button i {
+  padding-left: 5px;
 }
 /*# sourceMappingURL=login.css.map */

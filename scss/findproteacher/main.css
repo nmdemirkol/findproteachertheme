@@ -621,101 +621,11 @@ header .mobile-menu {
   padding: 0 5px;
 }
 
+.lesson-slider .item .footer .footer-info .star {
+  color: orange;
+}
+
 .lesson-slider .item .footer .price span {
-  color: #1a8a77;
-}
-
-.lessons .item {
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px 0px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.lessons .item .lesson-catagory {
-  background-color: #25e6c6;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 15px;
-  padding: 5px 15px;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
-.lessons .item img.lesson-iamge {
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
-.lessons .item h1 {
-  margin: 10px 20px;
-  font-size: 18px;
-  color: #636363;
-  font-weight: normal;
-}
-
-.lessons .item .lesson-teacher {
-  padding: 20px 20px 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.lessons .item .lesson-teacher img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-}
-
-.lessons .item .lesson-teacher p {
-  margin: 10px;
-}
-
-.lessons .item .footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.lessons .item .footer .footer-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.lessons .item .footer .footer-info .info-item {
-  padding: 0 5px;
-}
-
-.lessons .item .footer .price span {
   color: #1a8a77;
 }
 
@@ -1228,6 +1138,10 @@ footer .footer-contact .contact-item p {
   padding: 0 5px;
 }
 
+.lessons .item .footer .footer-info .star {
+  color: orange;
+}
+
 .lessons .item .footer .price span {
   color: #1a8a77;
 }
@@ -1583,6 +1497,10 @@ footer .footer-contact .contact-item p {
   margin-top: 30px;
 }
 
+.lesson-details .button {
+  text-align: center;
+}
+
 .lesson-details .lesson-left {
   border-radius: 10px;
   overflow: hidden;
@@ -1612,7 +1530,41 @@ footer .footer-contact .contact-item p {
 }
 
 .lesson-details .lesson-left .teacher-info {
+  position: relative;
   padding: 20px;
+}
+
+.lesson-details .lesson-left .teacher-info h1 {
+  font-size: 24px;
+}
+
+.lesson-details .lesson-left .teacher-info .name {
+  color: #3b3b3b;
+}
+
+.lesson-details .lesson-left .teacher-info .stars {
+  color: orange;
+  position: absolute;
+  right: 20px;
+  top: -30px;
+}
+
+.lesson-details .lesson-left .teacher-info .price {
+  border-top: 1px solid #b9b9b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.lesson-details .lesson-left .teacher-info .price .money {
+  color: #1a8a77;
 }
 
 .lesson-details .lesson-right .tabs {
@@ -1636,12 +1588,122 @@ footer .footer-contact .contact-item p {
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.lesson-details .description {
+.lesson-details .in-global {
   padding: 20px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   border-radius: 10px;
+}
+
+.lesson-details .in-global h1 {
+  font-size: 22px;
+}
+
+.lesson-details .in-global p {
+  color: #3b3b3b;
+}
+
+.lesson-details .video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.lesson-details .list-about h2 {
+  font-size: 18px;
+}
+
+.lesson-details .list-about li {
+  font-size: 14px;
+}
+
+.lesson-details .lesson-comments .comments-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.lesson-details .lesson-comments .comments-header .comments-header-left h1 {
+  border-left: #e6254a 4px solid;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.lesson-details .lesson-comments .comments-header .comments-header-left h1 i {
+  font-size: 18px;
+}
+
+.lesson-details .lesson-comments .comments-header .comments-header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lesson-details .lesson-comments .comments-header .comments-header-right i {
+  color: orange;
+}
+
+.lesson-details .lesson-comments .comments-header .comments-header-right span {
+  font-weight: bold;
+  color: orange;
+  padding: 0 10px 0 5px;
+}
+
+.lesson-details .lesson-comments .comment-line {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-details .lesson-comments .comment-line .comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lesson-details .lesson-comments .comment-line .comment-header .left img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.lesson-details .lesson-comments .comment-line .comment-header .left span {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.lesson-details .lesson-comments .comment-line .comment-header .right i {
+  color: orange;
+}
+
+.lesson-details .lesson-comments .comment-line .comment-header .right span {
+  font-weight: bold;
+  color: orange;
+}
+
+.lesson-details .lesson-comments .comment-line .comment-text {
+  padding-top: 15px;
+  color: #3b3b3b;
+}
+
+.lesson-details .lesson-comments .teacher-comment {
+  background-color: #f5f5f5;
 }
 
 .global-page {
