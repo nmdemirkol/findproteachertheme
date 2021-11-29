@@ -1146,6 +1146,10 @@ footer .footer-contact .contact-item p {
   color: #1a8a77;
 }
 
+.load {
+  text-align: center;
+}
+
 .companies {
   position: relative;
 }
@@ -1804,6 +1808,151 @@ footer .footer-contact .contact-item p {
 
 .global-page .normal-page .sidepanel {
   margin-left: 50px;
+}
+
+.lesson-add .text {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.lesson-add .text input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  outline: none;
+  border: 2px dotted lightblue;
+  border-radius: 10px;
+}
+
+.lesson-add .text input:hover {
+  outline: none;
+  border: 2px dotted darkturquoise;
+}
+
+.lesson-add .text input:focus {
+  outline: none;
+  border: 2px dotted dodgerblue;
+  background-color: lightcyan;
+}
+
+.lesson-add .add-left .lesson-image {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  border: 2px dotted lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.lesson-add .add-left .lesson-image img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 70px;
+  height: auto;
+}
+
+.lesson-add .add-left .lesson-image:hover {
+  border: 2px dotted darkturquoise;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: lightcyan;
+}
+
+.lesson-add .add-left .lesson-image:hover img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 90px;
+  height: auto;
+}
+
+.lesson-add .add-right .multi-text {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.lesson-add .add-right .multi-text textarea {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  outline: none;
+  border: 2px dotted lightblue;
+  border-radius: 10px;
+}
+
+.lesson-add .add-right .multi-text textarea:hover {
+  outline: none;
+  border: 2px dotted darkturquoise;
+}
+
+.lesson-add .add-right .multi-text textarea:focus {
+  outline: none;
+  border: 2px dotted dodgerblue;
+  background-color: lightcyan;
+}
+
+.lesson-add .button {
+  margin: 10px 0 20px 0;
+  float: right;
+  display: table;
+}
+
+.lesson-list {
+  margin-bottom: 50px;
+}
+
+.lesson-list .add-button {
+  display: block;
+  float: left;
+  margin: 10px 0;
+}
+
+.lesson-list .list-header {
+  margin: 20px 10px 0 10px;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  color: #b9b9b9;
+}
+
+.lesson-list .list-content {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  color: #3b3b3b;
+  margin: -10px 0 0 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.lesson-list .list-content div {
+  margin: 20px 0 0 0;
+}
+
+.lesson-list .list-content img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+}
+
+.lesson-list .list-content .button {
+  display: block;
+  float: left;
+  margin: -10px 5px 10px 0;
+  font-size: 12px;
 }
 
 body {

@@ -20,6 +20,36 @@
     transition: 0.2s;
 }
 
+.button-detail {
+    background-color: $detail-color;
+    color: white;
+    transition: 0.2s;
+}
+.button-detail:hover {
+    background-color: $detail-hover-color;
+    transition: 0.2s;
+}
+
+.button-edit {
+    background-color: $edit-color;
+    color: white;
+    transition: 0.2s;
+}
+.button-edit:hover {
+    background-color: $edit-hover-color;
+    transition: 0.2s;
+}
+
+.button-remove {
+    background-color: $remove-color;
+    color: white;
+    transition: 0.2s;
+}
+.button-remove:hover {
+    background-color: $remove-hover-color;
+    transition: 0.2s;
+}
+
 .button-inverse {
     color: $primary-color;
     transition: 0.2s;

@@ -23,6 +23,45 @@
   transition: 0.2s;
 }
 
+.button-detail {
+  background-color: #e2a600;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-detail:hover {
+  background-color: #cf7d02;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-edit {
+  background-color: #72d600;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-edit:hover {
+  background-color: #59a700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-remove {
+  background-color: #c9001b;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-remove:hover {
+  background-color: #990014;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .button-inverse {
   color: #e6254a;
   -webkit-transition: 0.2s;

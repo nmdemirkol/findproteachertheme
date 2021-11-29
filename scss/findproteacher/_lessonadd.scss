@@ -1,0 +1,87 @@
+@import "../variables";
+
+.lesson-add {
+    .text {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            outline: none;
+            border: 2px dotted lightblue;
+            border-radius: $primary-radius;
+        }
+        input:hover {
+            outline: none;
+            border: 2px dotted darkturquoise;
+        }
+        input:focus {
+            outline: none;
+            border: 2px dotted dodgerblue;
+            background-color: lightcyan;
+        }
+    }
+    .add-left {
+        .lesson-image {
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            height: 200px;
+            border: 2px dotted lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $primary-radius;
+            transition: 0.2s;
+
+            img {
+                transition: 0.2s;
+                width: 70px;
+                height: auto;
+            }
+            &:hover {
+                border: 2px dotted darkturquoise;
+                transition: 0.2s;
+                background-color: lightcyan;
+                img {
+                    transition: 0.2s;
+                    width: 90px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .add-right {
+        .multi-text {
+            margin-top: 20px;
+            width: 100%;
+
+            textarea {
+                width: 100%;
+                height: auto;
+
+                padding: 20px;
+                outline: none;
+                border: 2px dotted lightblue;
+                border-radius: $primary-radius;
+            }
+            textarea:hover {
+                outline: none;
+                border: 2px dotted darkturquoise;
+            }
+            textarea:focus {
+                outline: none;
+                border: 2px dotted dodgerblue;
+                background-color: lightcyan;
+            }
+        }
+    }
+    .button {
+        margin: 10px 0 20px 0;
+        float: right;
+        display: table;
+    }
+}

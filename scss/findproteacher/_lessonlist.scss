@@ -1,0 +1,42 @@
+@import "../variables";
+
+.lesson-list {
+    margin-bottom: 50px;
+    .add-button {
+        display: block;
+        float: left;
+        margin: 10px 0;
+    }
+    .list-header {
+        margin: 20px 10px 0 10px;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+        color: $primary-gray-color;
+    }
+    .list-content {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+        color: $primary-dark-gray-color;
+        margin: -10px 0 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: $primary-radius;
+        div {
+            margin: 20px 0 0 0;
+        }
+        img {
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            margin-top: -5px;
+        }
+
+        .button {
+            display: block;
+            float: left;
+            margin: -10px 5px 10px 0;
+            font-size: 12px;
+        }
+    }
+}
